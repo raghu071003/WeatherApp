@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/3406/3406977.png" type="image/x-icon" />
+
+</head>
+
+<body>
+  <!-- Make the weather app containers and form here -->
+  <div id="weather-container">
+    <h2>Weather App</h2>
+    <div id="input">
+      <input type="text" id="city" placeholder="Enter city">
+      <button onclick="getWeather()" class="button">Get Weather!</button>
+      <div class="three-body" id="loading">
+        <div class="three-body__dot"></div>
+        <div class="three-body__dot"></div>
+        <div class="three-body__dot"></div>
+        </div>
+    </div>
+
+    <img id="weather-icon" alt="">
+    <div id="temp-div"></div>
+    <div id="weather-info"></div>
+    <div id="hourly-forecast"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
